@@ -541,6 +541,10 @@ bottom: -28px;
   background: #31d0aa;
 }
 
+.sub-text {
+  margin-left: 80px;
+}
+
 .text-footer {
   display: flex;
   font-weight: 500;
@@ -565,6 +569,7 @@ color: #FFFFFF;
 }
 
 .modal-form-message-footer {
+  display: block;
   min-width: 264px;
   height: 40px;
   resize: none;
@@ -587,11 +592,30 @@ color: rgba(255, 255, 255, 0.6);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 16px;
-  background: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+
+.text-footer-btn {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
 }
 
 .btn-footer {
   display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 16px;
+background: #4D5AE5;
+border-radius: 4px;
 }
 
 /* =============/FOOTER===================== */
