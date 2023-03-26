@@ -413,7 +413,7 @@
   
   <div class="sub-text">
     <p class="text-footer">Subscribe</p>
-    <form class="modal-form">
+    <form class="modal-form-footer">
       <label class="modal-form-footer">
         <input class="modal-form-message-footer"
         type="email"
@@ -429,7 +429,7 @@
   </div>
 </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -468,7 +468,7 @@
             <span class="modal-form-input-wrapper">
             <input type="email"
             name="user-email"
-             class="modal-form-input" required>
+             class="modal-form-input">
              <svg class="modal-form-input-icon">
               <use href="./images/sprite.svg#icon-email-modal"></use>
              </svg>
@@ -476,29 +476,23 @@
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Comment</span>
-            <textarea name="user-message"
+            <textarea 
+                name="user-message"
                 class="modal-form-message"
                  placeholder="Text input"></textarea>
                 </label>
-                <div class="user-policy-wrapper">
-          <input id="user-policy"
-           type="checkbox"
-            name="policy"
-             class="modal-form-check hidden" required>
-           <label class="checkbox-policy-text" for="user-policy">
-            <svg class="checkbox-policy-icon">
-              <use class="checkbox-policy-icon-check" width="10" height="8"
-              href="./images/vector.svg"></use>
-            </svg>
-           <span class="user-policy-text">
-           I accept the terms and conditions of the&nbsp;<a class="modal-policy-text" href="">Privacy Policy</a>
-          </span>
+          <input
+              id="user-policy"
+              type="checkbox"
+              name="user-policy"
+             class="modal-form-check hidden">
+           <label for="user-policy" class="modal-form-check-desc"
+           >I accept the terms and conditions of the&nbsp;<a class="modal-policy-text" href="#">Privacy Policy</a>
         </label>
+        <button type="submit" class="modal-form-submit">Send</button>
+      </form>
         </div>
-          <button type="submit" class="modal-form-submit">Send</button>
-        </form>
       </div>
-    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
