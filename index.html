@@ -366,7 +366,7 @@
     </div>
       </section>
     </main>
-    <!--==== ===FOOTER===== -->
+    <!--========FOOTER========= -->
     <footer class="footer">
       <div class="container">
         <div>
@@ -411,8 +411,28 @@
       </ul>
     </div>
   </div>
+  <span class="container">
+  <p class="text-footer">Subscribe</p>
+  <form class="modal-form">
+    <label class="modal-form-footer">
+      <span class="form-input-footer"></span>
+      <textarea name="user-message"
+      class="modal-form-message-footer"
+       placeholder="E-mail"></textarea>
+      </label>
+      <input type="email"
+      name="user-email"
+       class="" required>
+    </label>
+    <button type="submit" class="modal-form-submit">Subscribe
+      <svg class="frame-footer" width="24" height="24">
+        <use href="./images/icon-send.svg"></use>
+      </svg>
+    </button>
+  </form>
+</span>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -464,7 +484,7 @@
                  placeholder="Text input"></textarea>
                 </label>
           <input id="user_policy" type="checkbox" name="user_policy" class="modal-form-check hidden">
-          <label for="user_policy" class="modal-form-check-desc">I accept the terms and conditions of the&nbsp;<a href="">Privacy Policy</a>
+          <label for="user_policy" class="modal-form-check-desc">I accept the terms and conditions of the&nbsp;<a class="modal-policy-text" href="">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
