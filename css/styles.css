@@ -550,6 +550,20 @@ letter-spacing: 0.02em;
 color: #FFFFFF;
 }
 
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-form-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .modal-form-message-footer {
   min-width: 264px;
   height: 40px;
@@ -574,6 +588,10 @@ color: rgba(255, 255, 255, 0.6);
   padding-bottom: 10px;
   margin-left: 16px;
   background: #FFFFFF;
+}
+
+.btn-footer {
+  display: flex;
 }
 
 /* =============/FOOTER===================== */
@@ -868,7 +886,7 @@ color: rgba(117, 117, 117, 0.5);
   border: 1px solid #4D5AE5;
 }
 
-.modal-form-check-desc {
+.user-policy-text {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -878,22 +896,47 @@ color: rgba(117, 117, 117, 0.5);
   color: #757575;
 }
 
-.modal-form-check-desc::before {
-  display: block;
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid #2E2F42;
-  border-radius: 2px;
-   content: "";
-   cursor: pointer;
-   margin-right: 8px;
+.user-policy-wrapper {
+  position: relative;
 }
 
-.modal-form-check:focus + .modal-form-check-desc::before {
+.checkbox {
+  display: flex;
+  text-align: center;
+}
+
+
+.checkbox-policy-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+height: 16px;
+border: 1px solid #2E2F42;
+border-radius: 2px;
+cursor: pointer;
+transform: translateY(-50%);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-check:checked + .checkbox-policy-icon {
+  background-color: #404BBF;
+  border-color: #404BBF;
+}
+
+.modal-form-check:focus + .checkbox-policy-icon {
   outline: 1px solid #404BBF;
-  border: 1.25px solid #2E2F42;
-  border-radius: 2px;
-  background-image: url(/images/vector.svg);
+  border-color: #404BBF;
+}
+
+.checkbox-policy-icon-check {
+  fill: #F4F4FD;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-check:checked + .checkbox-policy-icon-check {
+  opacity: 1;
 }
 
 .modal-form-submit {
