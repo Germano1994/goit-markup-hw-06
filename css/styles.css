@@ -927,7 +927,7 @@ border-radius: 2px;
   background-color: var(--accent-color);
 border: 1.25px solid var(--accent-color);
 border-radius: 2px;
-background-image: url(../images/sprite.svg#icon-vector);
+background-image: url(../images/vector.svg);
 background-repeat: no-repeat;
 background-size: 10px;
 background-position: center;
